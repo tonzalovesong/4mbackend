@@ -1,0 +1,11 @@
+// models/UpdateStatus.js
+const mongoose = require('mongoose');
+
+const Update_StatusSchema = new mongoose.Schema({
+    machines: String,
+    Status: String,
+    Update_Check_sheet: String,
+    Update_Connecttion: String
+}, { collection: 'Update_Status' });
+
+module.exports = mongoose.model('Update_Status', Update_StatusSchema);
